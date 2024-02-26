@@ -1,5 +1,4 @@
 name = ['paragraph', 'header']
-#tags = {paragraph: 'p', header: 'h1'}
 tags = {"paragraph" => 'p', "header" => 'h1'}
 
 name.each do |element|
