@@ -3,8 +3,8 @@ def tag chr, name
   last = "</#{chr}>"
   long = "#{name}"
   content = "This is a "
-  puts "#{first}#{content}#{long}.#{last}"
+  "#{first}#{content}#{long}.#{last}"
 end
 
-tag 'p', 'paragraph'
-tag 'h1', 'header'
+puts tag 'p', 'paragraph'
+puts tag 'h1', 'header'
