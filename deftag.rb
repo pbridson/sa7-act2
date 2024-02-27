@@ -1,4 +1,4 @@
-def tag(chr, name)
+def tag chr, name
   first = "<#{chr}>"
   last = "</#{chr}>"
   long = "#{name}"
@@ -6,5 +6,5 @@ def tag(chr, name)
   puts "#{first}#{content}#{long}.#{last}"
 end
 
-tag('p', 'paragraph')
-tag('h1', 'header')
+tag 'p', 'paragraph'
+tag 'h1', 'header'
