@@ -1,11 +1,9 @@
 def reverse_content(name)
-  File.open(name, 'r') do |f|
-    content = f.read
-    @reverse = content.chop.reverse
-  end
-  File.open('output.txt', 'w') do |f|
-    f.puts "#{@reverse}"
-  end
+  f = File.open(name, 'r')
+  content = f.read
+  reverse = content.chop.reverse
+  g = File.open('output.txt', 'w')
+  g.puts "#{reverse}"
 end
 
 begin
